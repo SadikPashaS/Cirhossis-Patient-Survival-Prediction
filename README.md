@@ -1,1 +1,1 @@
-# Cirhossis-Patient-Survival-Prediction
+This project predicts the survival status of patients suffering from liver cirrhosis using a machine learning model. Built with Flask for the web interface, it allows users to upload patient data in CSV format and receive predictions on survival outcomes.
