@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cirrhosis Survival Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystyle.css') }}">
+
+</head>
+<body>  
+    <div class="header">
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo">
+        <h1>Cirrhosis Survival Prediction</h1>
+        <div class="navbar">
+            <a href="#" class="pos">Home</a>
+            <a href="#" class="pos">About Us</a>
+            <a href="#"class="pos">Doctors/Specialists</a>
+            <select>
+                <option>Book Appointment</option>
+                </select>
+            <a href="#" class="pos">Contact/Emergency</a>
+            <a href="#" class="pos">FAQ/Support</a>
+        </div>
+    </div>
+
+    <div class="body_content">
+        <div class="upload-box">
+            <center><h2>Upload Patient Record</h2></center>
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" required>
+                <br><br>
+                <button type="submit">Predict</button>
+            </form>
+            </div>
+        <div class="image1">
+            <img src="{{ url_for('static', filename='pic1.jpeg') }}" alt="Pic1" height="500" width="500">
+        </div>
+        <div class="image2">
+            <img src="{{ url_for('static', filename='pic2.png') }}" alt="Pic1" height="500" width="500">
+        </div>
+    </div>
+</body>
+</html>
